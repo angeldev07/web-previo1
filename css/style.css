@@ -1,0 +1,16 @@
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.drinks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    row-gap: 1em;
+    align-items: center;
+    padding: 1em;
+}
+
+.card{
+    margin: auto;
+}
