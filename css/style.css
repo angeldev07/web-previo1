@@ -1,16 +1,120 @@
-.img{
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.main{
+    margin-top: 2rem;
+}
+
+.header{
+    background-image: url('../img/hero.png');
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-color: #01161e;
+    height: 100vh;
+    color: #db5050;
+}
+/* Estilos del nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em .5em;
+    margin-bottom: 3rem;
+}
+
+/* Logo y container estilos */
+.container,
+.carrito{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo,
+.carrito{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* hero section estilos */
+.hero{
     width: 100%;
     height: 100%;
+    text-align: center;
 }
+.title{
+    margin-bottom: 5rem;
+}
+
+
+/* Seccion de filtros estilos  */
+.subtitle{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.formulario-busqueda{
+    margin-bottom: 2rem;
+}
+
+.input-title{
+    font-size: 1rem;
+}
+
+.inputs{
+    margin: 1.5em 0;
+}
+
+.indicador-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indicador{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Filtros container */
+
 
 .drinks{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    row-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
     align-items: center;
-    padding: 1em;
 }
 
 .card{
     margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .filtros-container{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem
+    }
+
+    .forms-filtros{
+        order: 0;
+    }
+
+    .drinks{
+        order: 1;
+    }
 }
